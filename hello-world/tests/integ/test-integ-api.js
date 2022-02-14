@@ -28,8 +28,8 @@ describe("GET api test", async () => {
     assert.equal(apiResponse.status, 200);
   });
 
-  it("verifies if response contains my username", async () => {
+  it("verifies if response contains my message", async () => {
     // Replace "Hello world" with your username
-    assert.include(apiResponse.data.message, "Hello world");
+    assert.include(apiResponse.data.message, "Hello ASAP Fusion");
   });
 });

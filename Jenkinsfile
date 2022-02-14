@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent {docker { image 'public.ecr.aws/sam/build-nodejs14.x' } }
  
   stages {
     stage('Install sam-cli') {
